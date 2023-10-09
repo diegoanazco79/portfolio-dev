@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "next": "latest",
-    "next-themes": "0.2.1",
     "react": "latest",
     "react-dom": "latest"
   },
