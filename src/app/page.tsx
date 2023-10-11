@@ -125,7 +125,7 @@ export default function Home () {
         <h5 className='text-center text-3xl font-bold max-w-screen-md mx-auto px-5 xl:px-0'>
           Estoy orgulloso de haber colaborado con algunas empresas increíbles:
         </h5>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 px-5 xl:px-0 mt-16 justify-items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-20 px-5 xl:px-0 mt-16 justify-items-center'>
           <a
             href='https://www.vozy.co/'
             target='_blank'
