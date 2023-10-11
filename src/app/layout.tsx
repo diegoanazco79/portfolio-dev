@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 
+import Header from './layout/Header';
 import { Providers } from './providers';
 
 import './globals.css';
@@ -21,6 +22,7 @@ export default function RootLayout ({
     <html lang='en' className='light' suppressHydrationWarning>
       <body className={raleway.className}>
         <Providers>
+          <Header />
           {children}
         </Providers>
       </body>

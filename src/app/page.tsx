@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home () {
   return (
     <main>
-      <section className='max-w-screen-xl mx-auto mt-24'>
+      <section className='max-w-screen-xl mx-auto mt-14'>
         <div className='px-5 lg:px-0 xl:px-0'>
           <h1 className='text-5xl font-bold text-center'>
             Desarrollador Frontend & Diseñador
