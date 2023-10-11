@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import AvatarLight from '@/assets/svg/AvatarLight';
-
 export default function Home () {
   return (
     <main>
@@ -15,7 +13,13 @@ export default function Home () {
           </h5>
         </div>
         <div className='flex justify-center'>
-          <AvatarLight className='w-[200px] h-[200px] my-14' />
+          <Image
+            className='mx-auto my-14'
+            alt='Avatar'
+            src='/svg/avatar.svg'
+            width={200}
+            height={200}
+          />
         </div>
       </section>
       <section className='bg-main-blue h-fit py-20'>
@@ -36,8 +40,8 @@ export default function Home () {
           </p>
         </div>
       </section>
-      <section className='max-w-screen-xl my-14 mx-auto'>
-        <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-5 xl:px-0'>
+      <section className='max-w-screen-xl my-28 mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 px-5 xl:px-0 justify-items-center'>
           <div className='border rounded-lg border-gray-200 p-10'>
             <Image
               className='mx-auto'
@@ -48,8 +52,8 @@ export default function Home () {
             />
             <h4 className='text-2xl font-bold text-center mt-6'>Diseño</h4>
             <p className='text-center text-base mt-4'>
-              Me encanta cuando el contenido es fácil de seguir, y un diseño es
-              intuitivo.
+              Me encanta cuando el contenido es fácil de seguir, y cuando un
+              diseño es intuitivo.
             </p>
 
             <h3 className='text-lg font-semibold text-center mt-8'>
@@ -69,9 +73,7 @@ export default function Home () {
               width={75}
               height={75}
             />
-            <h4 className='text-2xl font-bold text-center mt-6'>
-              Frontend
-            </h4>
+            <h4 className='text-2xl font-bold text-center mt-6'>Front-end</h4>
             <p className='text-center text-base mt-4'>
               Me divierte crear código desde cero y me encanta ver cómo las
               ideas cobran vida en el navegador.
@@ -91,7 +93,7 @@ export default function Home () {
               <li>Bootstrap</li>
             </ul>
           </div>
-          <div className='border rounded-lg border-gray-200 p-10 md:col-span-1 lg:col-span-1'>
+          <div className='border rounded-lg border-gray-200 p-10 col-auto'>
             <Image
               className='mx-auto'
               alt='Design'
@@ -99,11 +101,10 @@ export default function Home () {
               width={75}
               height={75}
             />
-            <h4 className='text-2xl font-bold text-center mt-6'>
-              Desarrollo
-            </h4>
+            <h4 className='text-2xl font-bold text-center mt-6'>Desarrollo</h4>
             <p className='text-center text-base mt-4'>
-              Las claves detrás de mi proceso de desarrollo y gestión de proyectos de software.
+              Las claves detrás de mi proceso de desarrollo y gestión de
+              proyectos de software.
             </p>
 
             <h3 className='text-lg font-semibold text-center mt-8'>
@@ -118,6 +119,52 @@ export default function Home () {
               <li>Terminal</li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section className='max-w-screen-xl my-28 mx-auto'>
+        <h5 className='text-center text-3xl font-bold max-w-screen-md mx-auto px-5 xl:px-0'>
+          Estoy orgulloso de haber colaborado con algunas empresas increíbles:
+        </h5>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 px-5 xl:px-0 mt-16 justify-items-center'>
+          <a
+            href='https://www.vozy.co/'
+            target='_blank'
+            className='flex items-center'
+          >
+            <Image
+              className='mx-auto'
+              src='/img/vozy-logo.png'
+              alt='vozy'
+              width={200}
+              height={200}
+            />
+          </a>
+          <a
+            href='https://inka-labs.com/'
+            target='_blank'
+            className='flex items-center'
+          >
+            <Image
+              className='mx-auto'
+              src='/img/inka-labs.png'
+              alt='inka-labs'
+              width={200}
+              height={200}
+            />
+          </a>
+          <a
+            href='https://gomademascar.pe/'
+            target='_blank'
+            className='flex items-center'
+          >
+            <Image
+              className='mx-auto'
+              src='/img/goma-logo.png'
+              alt='goma-de-mascar'
+              width={200}
+              height={200}
+            />
+          </a>
         </div>
       </section>
     </main>
