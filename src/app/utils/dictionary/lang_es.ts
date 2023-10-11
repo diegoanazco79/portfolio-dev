@@ -52,6 +52,10 @@ const lang_es = {
   },
   companiesSection: {
     title: 'Estoy orgulloso de haber colaborado con algunas empresas increíbles:'
+  },
+  introProjectSection: {
+    title: 'Mis proyectos personales',
+    description: 'Te animo a revisar algunos de mis proyectos personales que muestran mi recorrido en el desarrollo web. Cada uno de ellos demuestra mi compromiso con la calidad técnica, la creatividad en el diseño y la capacidad para resolver desafíos'
   }
 };
 
