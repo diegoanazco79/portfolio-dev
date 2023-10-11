@@ -1,85 +1,88 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { useAppSelector } from '@/redux/store';
+
+import { getDictionary } from '../utils/functions';
 
 const Skills = () => {
+  const lang = useAppSelector((state) => state.uiSettings.language);
+  const srcLang = getDictionary(lang).skillsSection;
+
   return (
     <section className='max-w-screen-xl my-28 mx-auto'>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16 px-5 xl:px-0 justify-items-center'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-12 px-5 xl:px-0 justify-items-center'>
         <div className='border rounded-lg border-gray-200 p-10'>
           <Image
             className='mx-auto'
-            alt='Design'
+            alt='design-section'
             src='/svg/desing-section.svg'
             width={75}
             height={75}
           />
-          <h4 className='text-2xl font-bold text-center mt-6'>Diseño</h4>
+          <h4 className='text-2xl font-bold text-center mt-6'>
+            {srcLang.desing.title}
+          </h4>
           <p className='text-center text-base mt-4'>
-            Me encanta cuando el contenido es fácil de seguir, y cuando un
-            diseño es intuitivo.
+            {srcLang.desing.description}
           </p>
 
           <h3 className='text-lg font-semibold text-center mt-8'>
-            Herramientas:
+            {srcLang.desing.subtitle}
           </h3>
           <ul className='text-center mt-1'>
-            <li>Figma</li>
-            <li>Adobe Premier</li>
-            <li>Adobe Photoshop</li>
+            {srcLang.desing.items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
         <div className='border rounded-lg border-gray-200 p-10'>
           <Image
             className='mx-auto'
-            alt='Design'
+            alt='front-code'
             src='/svg/front-code.svg'
             width={75}
             height={75}
           />
-          <h4 className='text-2xl font-bold text-center mt-6'>Front-end</h4>
+          <h4 className='text-2xl font-bold text-center mt-6'>
+            {srcLang.frontEnd.title}
+          </h4>
           <p className='text-center text-base mt-4'>
-            Me divierte crear código desde cero y me encanta ver cómo las
-            ideas cobran vida en el navegador.
+            {srcLang.frontEnd.description}
           </p>
 
           <h3 className='text-lg font-semibold text-center mt-8'>
-            Tecnologías:
+            {srcLang.frontEnd.subtitle}
           </h3>
           <ul className='text-center mt-1'>
-            <li>NextJS</li>
-            <li>ReactJS</li>
-            <li>Typescript</li>
-            <li>JavaScript</li>
-            <li>TailwindCss</li>
-            <li>CSS</li>
-            <li>MaterialUI</li>
-            <li>Bootstrap</li>
+            {srcLang.frontEnd.items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
         <div className='border rounded-lg border-gray-200 p-10 col-auto'>
           <Image
             className='mx-auto'
-            alt='Design'
+            alt='development'
             src='/svg/development.svg'
             width={75}
             height={75}
           />
-          <h4 className='text-2xl font-bold text-center mt-6'>Desarrollo</h4>
+          <h4 className='text-2xl font-bold text-center mt-6'>
+            {srcLang.development.title}
+          </h4>
           <p className='text-center text-base mt-4'>
-            Las claves detrás de mi proceso de desarrollo y gestión de
-            proyectos de software.
+            {srcLang.development.description}
           </p>
 
           <h3 className='text-lg font-semibold text-center mt-8'>
-            Herramientas:
+            {srcLang.development.subtitle}
           </h3>
           <ul className='text-center mt-1'>
-            <li>GitLab</li>
-            <li>GitHub</li>
-            <li>Scrum</li>
-            <li>Kanban</li>
-            <li>VsCode</li>
-            <li>Terminal</li>
+            {srcLang.development.items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>

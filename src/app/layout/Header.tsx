@@ -39,16 +39,16 @@ const Header = () => {
   };
 
   return (
-    <header className='max-w-screen-xl mx-auto py-2 flex justify-end'>
+    <header className='max-w-screen-xl mx-auto py-2 flex justify-end px-5 lg:px-0 xl:px-0'>
       <Button
         variant='light'
         isIconOnly
         onClick={onChangeTheme}
-        className='mr-2'
+        className='hidden mr-2'
       >
         {theme === 'light' ? <BsFillMoonStarsFill /> : <BsSunFill />}
       </Button>
-      <Button variant='light' isIconOnly onClick={onChangeLanguage}>
+      <Button variant='light' className='font-semibold' isIconOnly onClick={onChangeLanguage}>
         {lang === 'es' ? 'ES' : 'EN'}
       </Button>
     </header>
