@@ -53,9 +53,40 @@ const lang_es = {
   companiesSection: {
     title: 'Estoy orgulloso de haber colaborado con algunas empresas increíbles:'
   },
-  introProjectSection: {
+  projectsSection: {
     title: 'Mis proyectos personales',
-    description: 'Te animo a revisar algunos de mis proyectos personales que muestran mi recorrido en el desarrollo web. Cada uno de ellos demuestra mi compromiso con la calidad técnica, la creatividad en el diseño y la capacidad para resolver desafíos'
+    description: 'Te animo a revisar algunos de mis proyectos personales que muestran mi recorrido en el desarrollo web. Cada uno de ellos demuestra mi compromiso con la calidad técnica, la creatividad en el diseño y la capacidad para resolver desafíos.',
+    projects: [
+      {
+        title: 'ROOM Arquitectura',
+        description: 'Landing page para una empresa de arquitectura y construcción, con un diseño moderno y minimalista.',
+        image: '/img/room-architecture.png',
+        url: 'https://quote-random-one.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/quote-random'
+      },
+      {
+        title: 'Random Quote',
+        description: 'Inspirate con las palabras de tus artistas y escritores favoritos, genera citas que iluminen tu día.',
+        image: '/img/quote-logo.png',
+        url: 'https://quote-random-one.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/quote-random'
+      },
+      {
+        title: 'Password Generator',
+        description: 'Genera contraseñas sólidas al instante. Personalizala como gustes, y evalúa su fortaleza.',
+        image: '/img/pass-generator.png',
+        url: 'https://password-generator-dun-one.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/password-generator'
+      },
+      {
+        title: 'MathDragon',
+        description: 'Mi primer proyecto para mi titulación. Aprende matemáticas de una manera divertida junto a Kalh el dragón.',
+        image: '/img/math-game.png',
+        url: 'https://diegoanazco79.github.io/MathDragon/',
+        githubUrl: 'https://github.com/diegoanazco79/MathDragon',
+        className: 'lg:col-start-2'
+      }
+    ]
   }
 };
 

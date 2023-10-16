@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <section className='max-w-screen-xl my-28 mx-auto'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-12 px-5 xl:px-0 justify-items-center'>
-        <div className='border rounded-lg border-gray-200 p-10'>
+        <div className='border rounded-lg border-gray-200 p-10 shadow'>
           <Image
             className='mx-auto'
             alt='design-section'
@@ -37,7 +37,7 @@ const Skills = () => {
             ))}
           </ul>
         </div>
-        <div className='border rounded-lg border-gray-200 p-10'>
+        <div className='border rounded-lg border-gray-200 p-10 shadow'>
           <Image
             className='mx-auto'
             alt='front-code'
@@ -61,7 +61,7 @@ const Skills = () => {
             ))}
           </ul>
         </div>
-        <div className='border rounded-lg border-gray-200 p-10 col-auto'>
+        <div className='border rounded-lg border-gray-200 p-10 col-auto shadow'>
           <Image
             className='mx-auto'
             alt='development'

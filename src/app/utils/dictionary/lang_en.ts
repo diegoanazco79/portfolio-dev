@@ -53,9 +53,40 @@ const lang_en = {
   companiesSection: {
     title: 'I am proud to have collaborated with some amazing companies:'
   },
-  introProjectSection: {
+  projectsSection: {
     title: 'My personal projects',
-    description: 'I encourage you to review some of my personal projects that show my journey in web development. Each of them demonstrates my commitment to technical quality, creativity in design and the ability to solve challenges'
+    description: 'I encourage you to review some of my personal projects that show my journey in web development. Each of them demonstrates my commitment to technical quality, creativity in design and the ability to solve challenges.',
+    projects: [
+      {
+        title: 'ROOM Arquitectura',
+        description: 'Landing page for an architecture and construction company, with a modern and minimalist design.',
+        image: '/img/room-architecture.png',
+        url: 'https://quote-random-one.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/quote-random'
+      },
+      {
+        title: 'Random Quote',
+        description: 'Get inspired by the words of your favorite artists and writers, generate quotes that brighten your day.',
+        image: '/img/quote-logo.png',
+        url: 'https://quote-random-one.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/quote-random'
+      },
+      {
+        title: 'Password Generator',
+        description: 'Generate strong passwords instantly. Customize it as you like, and evaluate its strength.',
+        image: '/img/pass-generator.png',
+        url: 'https://password-generator-dun-one.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/password-generator'
+      },
+      {
+        title: 'MathDragon',
+        description: 'My first project for my degree. Learn mathematics in a fun way with Kalh the dragon.',
+        image: '/img/math-game.png',
+        url: 'https://diegoanazco79.github.io/MathDragon/',
+        githubUrl: 'https://github.com/diegoanazco79/MathDragon',
+        className: 'lg:col-start-2'
+      }
+    ]
   }
 };
 
