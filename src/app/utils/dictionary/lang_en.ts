@@ -66,8 +66,8 @@ const lang_en = {
         title: 'ROOM',
         description: 'Landing page for an architecture and construction company, with a modern and minimalist design.',
         image: '/img/room-architecture.png',
-        url: 'https://quote-random-one.vercel.app/',
-        githubUrl: 'https://github.com/diegoanazco79/quote-random'
+        url: 'https://room-architecture.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/room-architecture'
       },
       {
         title: 'Random Quote',
