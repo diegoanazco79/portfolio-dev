@@ -53,12 +53,17 @@ const lang_en = {
   companiesSection: {
     title: 'I am proud to have collaborated with some amazing companies:'
   },
+  educationSection: {
+    title: 'My path to web development',
+    firstDescription: 'I was guided by Lasallian values. I started my education in elementary and high school, attending I.E. San Juan Bautista de La Salle in Arequipa, Peru. Later, I continued my training by studying Software Engineering at Universidad La Salle, also in Arequipa, Peru, and obtained my degree in Software Engineering in 2022.',
+    secondDescription: 'Thanks to the values that have been instilled in me, I have been able to develop always thinking first of people, and how I can help them through my work.'
+  },
   projectsSection: {
     title: 'My personal projects',
     description: 'I encourage you to review some of my personal projects that show my journey in web development. Each of them demonstrates my commitment to technical quality, creativity in design and the ability to solve challenges.',
     projects: [
       {
-        title: 'ROOM Arquitectura',
+        title: 'ROOM',
         description: 'Landing page for an architecture and construction company, with a modern and minimalist design.',
         image: '/img/room-architecture.png',
         url: 'https://quote-random-one.vercel.app/',
@@ -72,7 +77,7 @@ const lang_en = {
         githubUrl: 'https://github.com/diegoanazco79/quote-random'
       },
       {
-        title: 'Password Generator',
+        title: 'PassGenerator',
         description: 'Generate strong passwords instantly. Customize it as you like, and evaluate its strength.',
         image: '/img/pass-generator.png',
         url: 'https://password-generator-dun-one.vercel.app/',
@@ -81,6 +86,7 @@ const lang_en = {
       {
         title: 'MathDragon',
         description: 'My first project for my degree. Learn mathematics in a fun way with Kalh the dragon.',
+        note: 'Only desktop version.',
         image: '/img/math-game.png',
         url: 'https://diegoanazco79.github.io/MathDragon/',
         githubUrl: 'https://github.com/diegoanazco79/MathDragon',

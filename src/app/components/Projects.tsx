@@ -15,13 +15,14 @@ interface ProjectProps {
   className?: string;
   title: string;
   description: string;
+  note?: string;
   image: string;
   url: string;
   githubUrl: string;
 }
 
 const Project = ({
-  className = '', title, description, image, url, githubUrl
+  className = '', title, description, note, image, url, githubUrl
 }: ProjectProps) => {
   return (
     <div className={`${className} border rounded-lg border-gray-200 p-10 shadow`}>
@@ -35,7 +36,8 @@ const Project = ({
         <h4 className='font-semibold text-2xl text-center ml-2'>{title}</h4>
       </div>
       <p className='text-base text-center mt-6'>
-        {description}
+        {description} {' '}
+        <small className='text-center text-sm italic'>{note}</small>
       </p>
       <div className='flex items-center justify-center mt-6'>
         <a className='mr-2' href={url} target='_blank'>
@@ -73,6 +75,7 @@ const Projects = () => {
             key={idx}
             title={project.title}
             description={project.description}
+            note={project.note}
             image={project.image}
             url={project.url}
             githubUrl={project.githubUrl}
