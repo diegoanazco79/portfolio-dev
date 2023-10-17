@@ -11,7 +11,7 @@ const Banner = () => {
   const srcLang = getDictionary(lang).bannerSection;
 
   return (
-    <section className='max-w-screen-xl mx-auto mt-14'>
+    <section className='max-w-screen-xl mx-auto mt-28'>
       <div className='px-5 lg:px-0 xl:px-0'>
         <h1 className='text-5xl font-bold text-center'>{srcLang.title}</h1>
         <h5 className='text-center text-xl mt-4'> {srcLang.caption} </h5>
