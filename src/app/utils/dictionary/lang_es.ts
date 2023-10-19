@@ -38,7 +38,7 @@ const lang_es = {
     development: {
       title: 'Desarrollo',
       description: 'Las claves detrás de mi proceso de desarrollo y gestión de proyectos de software.',
-      subtitle: 'Herraminetas:',
+      subtitle: 'Herramientas:',
       items: [
         'GitLab',
         'GitHub',
@@ -61,14 +61,13 @@ const lang_es = {
   projectsSection: {
     title: 'Mis proyectos personales',
     description: 'Te animo a revisar algunos de mis proyectos personales que muestran mi recorrido en el desarrollo web. Cada uno de ellos demuestra mi compromiso con la calidad técnica, la creatividad en el diseño y la capacidad para resolver desafíos.',
+    roomProject: {
+      title: 'ROOM',
+      description: 'Landing page para una empresa de arquitectura y construcción, con un diseño moderno y minimalista.',
+      url: 'https://room-architecture.vercel.app/',
+      githubUrl: 'https://github.com/diegoanazco79/room-architecture'
+    },
     projects: [
-      {
-        title: 'ROOM',
-        description: 'Landing page para una empresa de arquitectura y construcción, con un diseño moderno y minimalista.',
-        image: '/img/room-architecture.png',
-        url: 'https://room-architecture.vercel.app/',
-        githubUrl: 'https://github.com/diegoanazco79/room-architecture'
-      },
       {
         title: 'Random Quote',
         description: 'Inspirate con las palabras de tus artistas y escritores favoritos, genera citas que iluminen tu día.',

@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.app.light {
+  background-color: white;
+}
+
+.app.dark {
+  background-color: #171212;
+}

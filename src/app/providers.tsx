@@ -11,7 +11,7 @@ export function Providers ({ children }: { children: React.ReactNode }) {
   return (
     <ReduxProvider store={store}>
       <NextUIProvider>
-        <NextThemesProvider attribute='class' defaultTheme='light'>
+        <NextThemesProvider attribute='class' defaultTheme='dark'>
           {children}
         </NextThemesProvider>
       </NextUIProvider>

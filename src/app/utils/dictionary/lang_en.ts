@@ -61,14 +61,13 @@ const lang_en = {
   projectsSection: {
     title: 'My personal projects',
     description: 'I encourage you to review some of my personal projects that show my journey in web development. Each of them demonstrates my commitment to technical quality, creativity in design and the ability to solve challenges.',
+    roomProject: {
+      title: 'ROOM',
+      description: 'Landing page for an architecture and construction company, with a modern and minimalist design.',
+      url: 'https://room-architecture.vercel.app/',
+      githubUrl: 'https://github.com/diegoanazco79/room-architecture'
+    },
     projects: [
-      {
-        title: 'ROOM',
-        description: 'Landing page for an architecture and construction company, with a modern and minimalist design.',
-        image: '/img/room-architecture.png',
-        url: 'https://room-architecture.vercel.app/',
-        githubUrl: 'https://github.com/diegoanazco79/room-architecture'
-      },
       {
         title: 'Random Quote',
         description: 'Get inspired by the words of your favorite artists and writers, generate quotes that brighten your day.',

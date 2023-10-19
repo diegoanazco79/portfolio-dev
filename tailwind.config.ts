@@ -13,7 +13,10 @@ const config: Config = {
   theme: {
     colors: {
       ...colors,
-      'main-blue': '#1F2F48'
+      'main-blue': '#1F2F48',
+      'dark-bg': '#171212',
+      'dark-text': '#DEDEDE',
+      'dark-bg-green': '#18342B'
     }
   },
   darkMode: 'class',

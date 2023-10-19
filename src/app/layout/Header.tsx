@@ -56,29 +56,31 @@ const Header = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 z-20 w-full bg-white ${scrolling ? 'shadow-sm' : ''}`}>
+    <nav className={`fixed top-0 left-0 z-20 w-full bg-white dark:bg-dark-bg ${scrolling ? 'shadow-sm' : ''}`}>
       <div className='max-w-screen-xl mx-auto py-2 flex justify-end px-5 lg:px-0 xl:px-0'>
-        <Button
-          variant='light'
-          isIconOnly
-          onClick={onChangeTheme}
-          className='hidden mr-2'
-        >
-          {theme === 'light' ? <BsFillMoonStarsFill /> : <BsSunFill />}
-        </Button>
         <a href='https://github.com/diegoanazco79' target='_blank'>
           <Button variant='light' className='mr-1' isIconOnly>
-            <BsGithub className='h-[18px] w-[18px]' />
+            <BsGithub className='h-[18px] w-[18px] dark:text-dark-text' />
           </Button>
         </a>
         <a href='https://www.linkedin.com/in/djanazcob/' target='_blank'>
           <Button variant='light' className='mr-1' isIconOnly>
-            <BsLinkedin className='h-[18px] w-[18px]' />
+            <BsLinkedin className='h-[18px] w-[18px] dark:text-dark-text' />
           </Button>
         </a>
-        <Button variant='light' className='font-semibold text-sm' isIconOnly onClick={onChangeLanguage}>
-          {lang === 'es' ? 'ES' : 'EN'}
-        </Button>
+        <div className='flex items-center'>
+          <Button
+            variant='light'
+            isIconOnly
+            onClick={onChangeTheme}
+            className='mr-1 dark:text-dark-text'
+          >
+            {theme === 'light' ? <BsFillMoonStarsFill className='h-[18px] w-[18px] dark:text-dark-text' /> : <BsSunFill className='h-[18px] w-[18px] dark:text-dark-text' />}
+          </Button>
+          <Button variant='light' className='font-semibold text-sm dark:text-dark-text' isIconOnly onClick={onChangeLanguage}>
+            {lang === 'es' ? 'ES' : 'EN'}
+          </Button>
+        </div>
       </div>
     </nav>
   );

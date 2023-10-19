@@ -19,7 +19,7 @@ export default function RootLayout ({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en' className='light' suppressHydrationWarning>
+    <html lang='en' className='app' suppressHydrationWarning>
       <body className={raleway.className}>
         <Providers>
           <Header />
