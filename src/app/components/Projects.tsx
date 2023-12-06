@@ -86,7 +86,6 @@ const Projects = () => {
             key={idx}
             title={project.title}
             description={project.description}
-            note={project.note}
             image={project.image}
             url={project.url}
             githubUrl={project.githubUrl}

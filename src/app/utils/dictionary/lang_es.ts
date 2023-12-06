@@ -82,13 +82,23 @@ const lang_es = {
         url: 'https://password-generator-dun-one.vercel.app/',
         githubUrl: 'https://github.com/diegoanazco79/password-generator'
       },
+      /*
+       * {
+       *   title: 'MathDragon',
+       *   description: 'Aprende operaciones matemáticas divertiendote junto a Kalh el dragón.',
+       *   note: 'Solo versión de escritorio.',
+       *   image: '/img/math-game.png',
+       *   url: 'https://diegoanazco79.github.io/MathDragon/',
+       *   githubUrl: 'https://github.com/diegoanazco79/MathDragon',
+       *   className: 'lg:col-start-2'
+       * },
+       */
       {
-        title: 'MathDragon',
-        description: 'Aprende operaciones matemáticas divertiendote junto a Kalh el dragón.',
-        note: 'Solo versión de escritorio.',
-        image: '/img/math-game.png',
-        url: 'https://diegoanazco79.github.io/MathDragon/',
-        githubUrl: 'https://github.com/diegoanazco79/MathDragon',
+        title: 'Salle Songbook',
+        description: 'Proyecto para los catequistas que desean aprender canciones de la Pastoral de La Salle.',
+        image: '/img/salle-songbook.png',
+        url: 'https://la-salle-songbook.vercel.app/',
+        githubUrl: 'https://github.com/diegoanazco79/salle-songbook',
         className: 'lg:col-start-2'
       }
     ]
